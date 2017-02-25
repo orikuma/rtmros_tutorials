@@ -52,9 +52,10 @@
 
   <!-- HEAD -->
   <xacro:include filename="$(find multisense_description)/urdf/multisenseSL/multisenseSL.urdf.xacro" />
+  <xacro:multisenseSL name=""/>
   <joint name="head_tip_to_multisense" type="fixed">
     <parent link="HEAD_LINK1" />
-    <child  link="head_root" />
+    <child  link="/head" />
     <!-- <origin rpy="-0.01 0.01 0.017" xyz="0.08 0.01 0.045"/> --> <!-- For leg -->
     <!-- <rigin rpy="-0.01 0.02 0.017" xyz="0.07 -0.01 0.045"/> old -->
     <!-- <origin rpy="-0.01 0.01 0.017" xyz="0.09 0.01 0.055"/>  --><!--middle-->
